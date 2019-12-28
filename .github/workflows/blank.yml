@@ -1,0 +1,18 @@
+name: master-merge
+
+on:
+  push:
+    branches: 
+      - master
+    tags:
+      - "!*"
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: merged
+      run: echo merged
