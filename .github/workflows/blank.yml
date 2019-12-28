@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: merged
-      run: echo merged
+      run: git rev-parse --short HEAD
